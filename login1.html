@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/login1.css">
+</head>
+
+<body>
+    <!-- 导航栏--start -->
+    <div class="head">
+        <div class="head-normal">
+            <!-- logo -->
+            <a href="javascript:;" title="英雄联盟官网" class="logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <!-- 导航栏模块 -->
+            <ul class="head-nav">
+                <li>
+                    <a href="javascript:;">
+                        <span class="head-nav-title">游戏资料</span>
+                        <span class="head-nav-en">GAME INFO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="head-nav-title">商城/合作</span>
+                        <span class="head-nav-en">STORE</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="head-nav-title">社区互动</span>
+                        <span class="head-nav-en">COMMUNITY</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="head-nav-title">赛事官网</span>
+                        <span class="head-nav-en">ESPORTS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <span class="head-nav-title">自助系统</span>
+                        <span class="head-nav-en">SYSTEM</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 玩家信息 -->
+            <div class="userinform">
+                <div class="head-userinfo">
+                    <img src="./images/default.png" alt="">
+                    <span></span>
+                </div>
+                <div class="head-userinfo-brief">
+                    <p class="unlogin">
+                        亲爱的召唤师，欢迎
+                        <a href="javascript:;">登录</a>
+                    </p>
+                </div>
+            </div>
+            <!-- 掌盟图标part-->
+            <span class="head-app-normal">
+                <a href="javascriopt:;" class="icon-phone"></a>
+             </span>
+            <!-- 搜索按钮 -->
+            <a href="javascript:;" title="搜索" class="head-btn">
+                <i class="icon-search"></i>
+            </a>
+        </div>
+
+    </div>
+    <!-- 导航栏--end -->
+    <!-- 主体--start -->
+    <div class="main">
+        <div class="slogo"></div>
+        <div class="logo-box">
+            <a href="javascript:;" class="logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <a href="javascript:;" class="logo2">
+                <img src="./images/logo2.png" alt="">
+            </a>
+        </div>
+        <div class="btns act">
+            <a href="login.html" class="btn-os" target="_blank"></a>
+            <a href="javascript:;" class="btn-get"></a>
+            <a href="javascript:;" class="btn-dl"></a>
+        </div>
+    </div>
+    <!-- 主体--end -->
+    <!-- 底部--start -->
+    <footer>
+        <div class="footer-meg">
+            <p>
+                <a href="javascript:;">腾讯互动娱乐</a> &nbsp;|&nbsp;
+                <a href="javascript:;">服务条款</a> &nbsp;|&nbsp;
+                <a href="javascript:;">隐私保护指引</a> &nbsp;|&nbsp;
+                <a href="javascript:;">儿童隐私保护指引</a> &nbsp;|&nbsp;
+                <a href="javascript:;">腾讯游戏招聘</a> &nbsp;|&nbsp;
+                <a href="javascript:;">腾讯游戏客服</a> &nbsp;|&nbsp;
+                <a href="javascript:;">游戏列表</a> &nbsp;|&nbsp;
+                <a href="javascript:;">成长守护平台</a> &nbsp;|&nbsp;
+                <a href="javascript:;">广告服务及商务合作</a>
+            </p>
+            <p>COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+            <p>
+                <a href="javascript:;">腾讯公司 版权所有</a>
+            </p>
+        </div>
+    </footer>
+    <!-- 底部--end -->
+    <!-- 音频 -->
+    <audio autoplay>
+        <source src="./欢迎来到英雄联盟2.mp3" type="audio/mpeg">
+
+        Your browser does not support this audio format.
+      </audio>
+    <script>
+        var btn = document.querySelector('.btn-os')
+        var audio = document.querySelector('audio')
+        btn.onclick = function() {
+            audio.play()
+        }
+    </script>
+</body>
+
+</html>

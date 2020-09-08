@@ -1,0 +1,268 @@
+.head {
+    width: 100%;
+    height: 78px;
+    background-color: #000;
+}
+
+.head-normal {
+    height: 78px;
+    max-width: 1358px;
+    min-width: 1320px;
+    margin: 0 auto;
+}
+
+.head-normal .logo {
+    float: left;
+    width: 132px;
+    height: 49px;
+    margin-top: 10px;
+}
+
+.head-nav {
+    float: left;
+    width: 55%;
+    height: 78px;
+    margin-left: 30px;
+    padding-top: 16px;
+}
+
+.head-nav li {
+    float: left;
+    width: 20%;
+    height: 78px;
+    text-align: center;
+}
+
+.head-nav .head-nav-title {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+
+.head-nav .head-nav-en {
+    display: block;
+    color: #eaeaea;
+    font-size: 11px;
+}
+
+.userinform {
+    float: right;
+    width: 244px;
+    height: 78px;
+}
+
+.head-userinfo {
+    float: left;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin-top: 14px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 0;
+}
+
+.head-userinfo>img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.head-userinfo>span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/sprites.png);
+    background-position: -216px -117px;
+    width: 48px;
+    height: 48px;
+}
+
+.head-userinfo-brief {
+    float: left;
+    margin-left: 10px;
+}
+
+.head-userinfo-brief>.unlogin {
+    color: #fefefe;
+    font-size: 16px;
+    line-height: 78px;
+}
+
+.head-userinfo-brief a {
+    color: #fff3d0;
+}
+
+.head-app-normal {
+    float: right;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 17px 31px 0 0;
+}
+
+.head-app-normal>a {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../images/sprites.png);
+    background-position: -303px -84px;
+    width: 16px;
+    height: 24px;
+}
+
+.head-btn {
+    float: right;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 17px 12px 0 0;
+}
+
+.head-btn>i {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../images/sprites.png);
+    background-position: -381px -39px;
+    width: 21px;
+    height: 21px;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 990px;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.slogo {
+    width: 1015px;
+    height: 292px;
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    margin-left: -507.5px;
+    background: url(../images/slogo.png) no-repeat;
+}
+
+.logo-box {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+}
+
+.logo-box .logo {
+    width: 200px;
+    height: 72px;
+    display: block;
+    position: absolute;
+    top: 67px;
+    left: 59px;
+    transition: all 0.3s;
+}
+
+.logo-box .logo:hover {
+    filter: brightness(1.15);
+}
+
+.logo-box .logo2 {
+    width: 118px;
+    height: 121px;
+    display: block;
+    position: absolute;
+    top: 43px;
+    left: 268px;
+    transition: all 0.3s;
+}
+
+.logo-box .logo2:hover {
+    filter: brightness(1.15);
+}
+
+.btns {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    top: 764px;
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.btns.act {
+    animation: fadeInUp .8s .6s both;
+    z-index: 99;
+    pointer-events: auto;
+}
+
+.btns a {
+    display: inline-block;
+    margin: 0;
+    transition: transform 0.5s, filter 0.5s;
+    position: relative;
+}
+
+.btns a:hover {
+    transform: translateY(-10px)
+}
+
+.btn-os {
+    background: url(../images/btns.png) 0px 0 no-repeat;
+    left: -22px;
+    width: 274px;
+    height: 69px;
+}
+
+.btn-get {
+    background: url(../images/btns.png) -295px 0 no-repeat;
+    width: 330px;
+    height: 69px;
+}
+
+.btn-dl {
+    background: url(../images/btns.png) -646px 0 no-repeat;
+    left: 21px;
+    width: 273px;
+    height: 69px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+.footer-meg {
+    max-width: 1358px;
+    min-width: 1320px;
+    margin: 0 auto;
+}
+
+.footer-meg p {
+    font-size: 12px;
+    color: #6e6e6e;
+}
+
+.footer-meg p:nth-child(2) {
+    font-size: 10px;
+}
+
+.footer-meg p a {
+    color: #6e6e6e;
+}

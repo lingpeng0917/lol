@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯游戏支付中心</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/pay.css">
+    <!-- 引入jquery.js文件 -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- 引入自己的js文件 -->
+    <script src="./js/pay.js"></script>
+</head>
+
+<body>
+    <!-- 头部部分开始 -->
+    <header>
+        <!-- 版心 -->
+        <div class="w">
+            <!-- logo部分 -->
+            <h1 title="腾讯游戏支付中心"">
+                <a href=" #"">腾讯游戏支付中心</a>
+            </h1>
+            <!-- 登录部分 -->
+            <div class="login">
+                欢迎您,
+                <span>741567165</span>
+                <a href="../index.html">[注销]</a>
+            </div>
+            <!-- payheader部分 -->
+            <div class="payheader">
+                <ul>
+                    <li><a href="#">英雄联盟充值点券</a></li>
+                    <li><a href="#">Q币账户充值</a></li>
+                </ul>
+            </div>
+            <!-- 跳转部分 -->
+            <div class="jump">
+                您当前选择支付：
+                <span>英雄联盟</span>
+            </div>
+            <!-- 跳转下拉菜单 -->
+            <div class="jumplist"></div>
+        </div>
+    </header>
+    <!-- 头部部分结束 -->
+    <!-- banner部分开始 -->
+    <div class="banner">
+        <div class="w">
+            <div class="contain">
+                <!-- 左边部分 -->
+                <div class="left">
+                    <div class="left_head">
+                        <img src="images/union.png" alt="">
+                        <p>英雄联盟点券</p>
+                        <p>lol.qq.com</p>
+                    </div>
+                    <div class="left_banner">
+                        <p>英雄联盟，英雄一起去超越！</p>
+                    </div>
+                    <div class="left_footer">
+                        <div class="agree">
+                            <input type="checkbox" name="" id="" checked>
+                            <i>同意</i>
+                            <a href="#">英雄联盟玩家条例</a>
+                        </div>
+                        <span>
+                            <i></i>
+                            请同意以上服务条款才能开通哦
+                        </span>
+                    </div>
+                </div>
+
+
+
+                <!-- 右边部分 -->
+                <div class="right">
+                    <div class="right_w">
+                        <div class="right_header">
+                            <!-- 账户 -->
+                            <div class="account">
+                                <span>充值账号：</span>
+                                <span>741567165（自己）</span>
+                                <span>黑色玫瑰&nbsp;电信；</span>
+                            </div>
+                            <!-- 选择金额部分 -->
+                            <div class="amount">
+                                <div class="amount_item" style="border-color: #3387ef;">
+                                    <div class="amount_item-top">
+                                        <p>
+                                            <img src="images/24.png" alt="">
+                                            <span>5000</span>
+                                        </p>
+                                    </div>
+                                    <div class="amount_item-bottom">
+                                        <em>50</em>
+                                        <span>元</span>
+                                    </div>
+                                    <i style="display: block;"></i>
+                                </div>
+                                <div class="amount_item">
+                                    <div class="amount_item-top">
+                                        <p>
+                                            <img src="images/24.png" alt="">
+                                            <span>10000</span>
+                                        </p>
+                                    </div>
+                                    <div class="amount_item-bottom">
+                                        <em>100</em>
+                                        <span>元</span>
+                                    </div>
+                                    <i></i>
+                                </div>
+                                <div class="amount_item">
+                                    <div class="amount_item-top">
+                                        <p>
+                                            <img src="images/24.png" alt="">
+                                            <span>20000</span>
+                                        </p>
+                                    </div>
+                                    <div class="amount_item-bottom">
+                                        <em>200</em>
+                                        <span>元</span>
+                                    </div>
+                                    <i></i>
+                                </div>
+                                <div class="amount_item">
+                                    <div class="amount_item-top">
+                                        <p>
+                                            <img src="images/24.png" alt="">
+                                            <input type="text" placeholder="其他数量" maxlength="6" id="money">
+                                        </p>
+                                    </div>
+                                    <div class="amount_item-bottom">
+                                        <em class="other_amount"></em>
+                                        <span>元</span>
+                                    </div>
+                                    <i></i>
+                                    <p class="warn_num">
+                                        <em class="num_error"></em>
+                                        请输入充值数量
+                                    </p>
+                                </div>
+                                <p class="warn">
+                                    <b></b>
+                                    充值数量必须是100的倍数,单次最多不超过100000
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right_footer">
+                            <div class="pay_area-header clearfix">
+                                <p>支付方式：</p>
+                                <div class="pay_style">
+                                    <div class="choice" style="border-color: #3387ef;">
+                                        <span>QQ钱包</span>
+                                        <em>97折</em>
+                                        <i style="display: block;"></i>
+                                    </div>
+                                    <div class="choice">
+                                        <span>微信支付</span>
+                                        <em>97折</em>
+                                        <i></i>
+                                    </div>
+                                    <div class="choice">
+                                        <span>网银支付</span>
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay_area-body">
+                                <div class="qqpay">
+                                    <div class="qqpay-txt">
+                                        <i></i>
+                                        <span>手Q扫码，支付<em class="price_ss">48.5</em>元</span>
+                                    </div>
+                                    <div class="qqpay-code">
+                                        <img src="images/get_qr_image.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="wxpay">
+                                    <div class="wxpay-txt">
+                                        <i></i>
+                                        <span>微信扫码，支付<em class='price_ss'>48.5</em>元</span>
+                                    </div>
+                                    <div class="wxpay-code">
+                                        <img src="images/get_qr_image (1).png" alt="">
+                                    </div>
+                                </div>
+                                <div class="bankpay">
+                                    <div class="bank_list">
+                                        <ul>
+                                            <li style="border-color: #3387ef; z-index: 999;">
+                                                <input type="radio" name="bank" id="zs" checked>
+                                                <label for="zs">
+                                                    <i></i>
+                                                    <span>招商银行</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="bank" id="gs">
+                                                <label for="gs">
+                                                    <i></i>
+                                                    <span>工商银行</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="bank" id="js">
+                                                <label for="js">
+                                                    <i></i>
+                                                    <span>建设银行</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="bank" id="ny">
+                                                <label for="ny">
+                                                    <i></i>
+                                                    <span>农业银行</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="bank" id="zg">
+                                                <label for="zg">
+                                                    <i></i>
+                                                    <span>中国银行</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="bank" id="xyyh">
+                                                <label for="xyyh">
+                                                    <i></i>
+                                                    <span>兴业银行</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="bank" id="bj">
+                                                <label for="bj">
+                                                    <i></i>
+                                                    <span>北京银行</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="bank" id="gd">
+                                                <label for="gd">
+                                                    <i></i>
+                                                    <span>光大银行</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="bank" id="jt">
+                                                <label for="jt">
+                                                    <i></i>
+                                                    <span>交通银行</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="type">
+                                        选择卡种：
+                                        <input type="radio" id="cx" name="card" checked><label
+                                            for="cx">储蓄卡</label>&nbsp;
+                                        <input type="radio" id=xy name="card"><label for="xy">信用卡</label>
+                                    </div>
+                                    <div class="btn">
+                                        <button id="btn">去支付&nbsp;<em>50</em>元</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner部分结束 -->
+    <!-- 尾部部分开始 -->
+    <footer>
+        <div class="w">
+            <p>
+                <a href="#">关于腾讯</a>
+                <span>|</span>
+                <a href="#">About Tencent</a>
+                <span>|</span>
+                <a href="#">服务条款</a>
+                <span>|</span>
+                <a href="#">广告服务</a>
+                <span>|</span>
+                <a href="#">腾讯招聘</a>
+                <span>|</span>
+                <a href="#">客服中心</a>
+                <span>|</span>
+                <a href="#">商务合作</a>
+                <span>|</span>
+                <a href="#">网站导航</a>
+            </p>
+            <p>Copyright © 1998 – 2015 Tencent. All Rights Reserved.</p>
+            <p><a href="#">腾讯公司 版权所有</a></p>
+        </div>
+    </footer>
+    <!-- 尾部部分结束 -->
+</body>
+
+</html>

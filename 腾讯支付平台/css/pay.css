@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 12px '微软雅黑';
+}
+
+i {
+    font-stretch: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 版心部分 */
+
+.w {
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* 字体图标 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?9dxh7l');
+    src: url('fonts/icomoon.eot?9dxh7l#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?9dxh7l') format('truetype'), url('fonts/icomoon.woff?9dxh7l') format('woff'), url('fonts/icomoon.svg?9dxh7l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 头部部分开始 */
+
+h1 {
+    float: left;
+    width: 300px;
+    height: 45px;
+    margin-top: 14px;
+    background: url(../images/logo.gif) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+header {
+    border-bottom: 3px solid #003e6e;
+}
+
+/* 登录部分 */
+
+.login {
+    float: right;
+    margin-top: 20px;
+    color: #797979;
+}
+
+.login a {
+    color: #797979;
+    text-decoration: underline;
+}
+
+.login a:hover {
+    text-decoration: none;
+}
+
+/* payheader部分 */
+
+.payheader {
+    float: left;
+    width: 592px;
+    clear: both;
+    margin-top: 10px;
+}
+
+.payheader ul li {
+    float: left;
+    width: 167px;
+    height: 34px;
+    margin-left: 2px;
+    background: url(../images/img.gif) no-repeat;
+}
+
+.payheader a {
+    display: block;
+    width: 167px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.payheader ul li:last-child a {
+    width: 128px;
+    color: #000;
+}
+
+.payheader ul li:first-child {
+    background-position: -474px -442px;
+}
+
+.payheader ul li:last-child {
+    background-position: -474px 0;
+}
+
+.jump {
+    float: right;
+    background: url(../images/img.gif) no-repeat -248px -23px;
+    margin-top: -35px;
+    clear: both;
+}
+
+.jump span {
+    display: inline-block;
+    width: 125px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background: url(../images/img.gif) no-repeat 9px -903px;
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+/* 头部部分结束 */
+
+/* banner部分开始 */
+
+.contain {
+    width: 990px;
+    height: 600px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.left {
+    float: left;
+    width: 212px;
+    height: 598px;
+    padding: 30px 30px 25px 25px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+.left_head img {
+    width: 90px;
+    height: 90px;
+}
+
+.left_head p:nth-of-type(1) {
+    font-size: 18px;
+    color: #313131;
+    font-family: '微软雅黑';
+}
+
+.left_head p:nth-of-type(2) {
+    color: #7f7f7f;
+    font-size: 14px;
+}
+
+.left_banner {
+    width: 159px;
+    height: 150px;
+    margin-top: 20px;
+    color: #7f7f7f;
+    text-align: center;
+}
+
+.left_footer {
+    position: relative;
+    text-align: center;
+}
+
+.left_footer input {
+    vertical-align: middle;
+}
+
+/* 通过js设置隐藏显示 */
+
+.left_footer span {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: -23px;
+    width: 207px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #ccc;
+    color: #969696;
+}
+
+.left_footer span i {
+    position: absolute;
+    top: 12px;
+    left: 3px;
+    width: 13px;
+    height: 13px;
+    background: url(../images/sprite.5e2f61e2dedbc68b8b5c81275ba25d71.png) no-repeat -166px -158px;
+}
+
+.left_footer span::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 104px;
+    width: 9px;
+    height: 7px;
+    background: url(../images/paySprite.4d6a9ca97b68160d957c19332921687e.png) no-repeat 0 0;
+}
+
+.agree a {
+    color: #3387ef;
+}
+
+.right {
+    float: right;
+    width: 778px;
+    height: 600px;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+/* 右部分版心 */
+
+.right_w {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.right_header {
+    height: 241px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.account {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.account span {
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+
+/* 金额部分 */
+
+.amount {
+    position: absolute;
+    margin-top: 20px;
+    height: 170px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.amount_item {
+    position: relative;
+    float: left;
+    width: 128px;
+    height: 128px;
+    margin-left: 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.amount_item:first-child {
+    margin-left: 0;
+}
+
+.amount_item>p {
+    display: none;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    height: 12px;
+    padding-left: 20px;
+    line-height: 13px;
+    font-family: '微软雅黑';
+    color: red;
+}
+
+.amount_item .num_error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background: url(../images/sprite.5e2f61e2dedbc68b8b5c81275ba25d71.png) no-repeat -166px -158px;
+}
+
+.amount_item-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 126px;
+    height: 96px;
+}
+
+.amount_item-top p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.amount_item-top img {
+    vertical-align: middle;
+}
+
+.amount_item-top span {
+    font-size: 20px;
+    font-family: 'Arial';
+    vertical-align: middle;
+}
+
+.amount_item-top input {
+    width: 84px;
+    height: 24px;
+    border: none;
+    font-size: 20px;
+    vertical-align: middle;
+    outline: none;
+}
+
+.amount_item-top input:focus {
+    border-bottom: 1px solid #3387ef;
+    transition: all .3s;
+}
+
+.amount_item i {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url(../images/sprite.5e2f61e2dedbc68b8b5c81275ba25d71.png) no-repeat -113px -129px;
+}
+
+.amount_item-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    height: 32px;
+    margin-left: 18px;
+    text-align: center;
+    line-height: 32px;
+    border-top: 1px dotted #ccc;
+}
+
+.amount_item-bottom em {
+    font-size: 16px;
+}
+
+.amount_item-bottom span {
+    font-size: 16px;
+}
+
+.amount>p {
+    display: none;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    height: 12px;
+    padding-left: 15px;
+    line-height: 13px;
+    font-family: '微软雅黑';
+}
+
+.amount>p b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background: url(../images/sprite.5e2f61e2dedbc68b8b5c81275ba25d71.png) no-repeat -113px -178px;
+}
+
+/* 支付方式模块 */
+
+.pay_area-header p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.pay_area-header .choice {
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 40px;
+    margin-left: 10px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pay_area-header .choice:first-child {
+    margin-left: 0;
+}
+
+.pay_area-header .choice span {
+    font-size: 14px;
+}
+
+.pay_area-header .choice i {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url(../images/sprite.5e2f61e2dedbc68b8b5c81275ba25d71.png) no-repeat -113px -129px;
+}
+
+.pay_area-header .choice em {
+    background-color: #ff6d33;
+    color: #fff;
+    padding: 1px 2px;
+}
+
+.pay_area-header .choice b {
+    font-family: 'icommon';
+}
+
+.pay_area-body em {
+    font-size: 20px;
+}
+
+.pay_area-body .qqpay {
+    text-align: center;
+}
+
+.pay_area-body .qqpay .qqpay-txt {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pay_area-body .qqpay .qqpay-txt i {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: url(../images/sprite.5e2f61e2dedbc68b8b5c81275ba25d71.png) no-repeat -69px -81px;
+    vertical-align: -2px;
+}
+
+.pay_area-body .qqpay .qqpay-txt span {
+    font-size: 14px;
+}
+
+/* 微信支付模块 */
+
+.pay_area-body .wxpay {
+    text-align: center;
+    display: none;
+}
+
+.pay_area-body .wxpay .wxpay-txt {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pay_area-body .wxpay .wxpay-txt i {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(../images/sprite.5e2f61e2dedbc68b8b5c81275ba25d71.png) no-repeat -142px -129px;
+    vertical-align: -2px;
+}
+
+.pay_area-body .wxpay .wxpay-txt span {
+    font-size: 14px;
+}
+
+.bankpay {
+    display: none;
+    padding-top: 20px;
+}
+
+.bank_list {
+    width: 550px;
+    height: 60px;
+}
+
+.bank_list ul li {
+    position: relative;
+    float: left;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: -1px;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.bank_list ul li:nth-child(n+6) {
+    margin-top: -1px;
+}
+
+.bank_list ul li input {
+    vertical-align: -1px;
+    cursor: pointer;
+}
+
+.bank_list ul li label {
+    cursor: pointer;
+}
+
+.bank_list ul li span {
+    font-size: 14px;
+    color: #969696;
+    vertical-align: 0px;
+}
+
+.bank_list ul li i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: -3px;
+}
+
+.bank_list ul li:nth-child(1) i {
+    background: url(../images/bank_ico.a40d39d1c3ad47a76d4a2c9e09db95a9.png) no-repeat -18px 0;
+}
+
+.bank_list ul li:nth-child(2) i {
+    background: url(../images/bank_ico.a40d39d1c3ad47a76d4a2c9e09db95a9.png) no-repeat 0 0;
+}
+
+.bank_list ul li:nth-child(3) i {
+    background: url(../images/bank_ico.a40d39d1c3ad47a76d4a2c9e09db95a9.png) no-repeat -36px 0;
+}
+
+.bank_list ul li:nth-child(4) i {
+    background: url(../images/bank_ico.a40d39d1c3ad47a76d4a2c9e09db95a9.png) no-repeat -54px 0;
+}
+
+.bank_list ul li:nth-child(5) i {
+    background: url(../images/bank_ico.a40d39d1c3ad47a76d4a2c9e09db95a9.png) no-repeat -72px 0;
+}
+
+.bank_list ul li:nth-child(6) i {
+    background: url(../images/bank_ico.a40d39d1c3ad47a76d4a2c9e09db95a9.png) no-repeat 0 -18px;
+}
+
+.bank_list ul li:nth-child(7) i {
+    background: url(../images/bank_ico.a40d39d1c3ad47a76d4a2c9e09db95a9.png) no-repeat -126px -18px;
+}
+
+.bank_list ul li:nth-child(8) i {
+    background: url(../images/bank_ico.a40d39d1c3ad47a76d4a2c9e09db95a9.png) no-repeat -90px 0;
+}
+
+.bank_list ul li:nth-child(9) i {
+    background: url(../images/bank_ico.a40d39d1c3ad47a76d4a2c9e09db95a9.png) no-repeat -36px -18px;
+}
+
+.bankpay .type {
+    margin-top: 10px;
+}
+
+.bankpay .type input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.bankpay .btn button {
+    width: 130px;
+    height: 40px;
+    background-color: #3387ef;
+    line-height: 40px;
+    margin-top: 10px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.bankpay .btn em {
+    font-size: 14px;
+}
+
+/* banner部分结束 */
+
+/* 尾部部分开始 */
+
+footer {
+    text-align: center;
+    color: #a4a4a4;
+    margin-top: 150px;
+}
+
+footer p a {
+    color: #797979;
+    line-height: 28px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* 尾部部分结束 */
